@@ -32,7 +32,13 @@ python3 -m venv venv
 
 Concluindo a criação, ative o ambiente:
 ~~~python
+No Linux:
+
 source venv/bin/activate
+
+No Windows:
+
+.\venv\Scripts\activate.bat
 ~~~
 
 Para desativar o ambiente digite no terminal:
@@ -47,6 +53,8 @@ pip install -r requirements.txt
 
 Com todas as libs já instaladas, para executar o projeto digite:
 ~~~python
+python manage.py migrate
+
 python manage.py runserver
 ~~~
 
